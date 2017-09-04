@@ -137,14 +137,131 @@ a.menu-logo {
 	max-width: 460px;
 }
  
+/* Products */
+
+.products {
+	background: #e7e4d8;
+	padding: 60px 0;
+	border-top: 3px solid #d6d3c8;
+	border-bottom: 3px solid #d6d3c8;
+}
+
+.products-container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.products-container::before, .products-container::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.products-item {
+	width: 300px;
+	float: left;
+	margin: 0 10px 20px 10px;
+}
+
+.products-item h2 {
+	text-align: center;
+	font-size: 2.25em;
+	margin-bottom: 20px;
+}
+
+.products-item h2::before {
+	content: '';
+	display: block;
+	width: 100px;
+	height: 100px;
+	background: currentColor;
+	border-radius: 50%;
+	margin: 20px auto;
+	border: 5px solid #e7e4d8;
+	box-shadow: 0 0 0 5px currentColor;
+}
+
+h2.products-paulista::before {
+	color: #492901;
+}
+
+h2.products-carioca::before {
+	color: #c17139;
+}
+
+h2.products-mineiro::before {
+	color: #d7a54d;
+}
+
+.products-item p {
+	font-size: 0.875em;
+	line-height: 1.4em;
+}
+
+.products-btn {
+	width: 180px;
+	border: 3px solid #252525;
+	color: #252525;
+	text-decoration: none;
+	display: block;
+	margin: 20px auto 0 auto;
+	text-align: center;
+	font-size: 1.125em;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 15px 0;
+}
 
 
+/* Places */
 
+.places {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 60px 0;
+}
 
+.places-item {
+	clear: both;
+}
 
+.places-item::after, .places-item::before {
+	display: table;
+	content: '';
+	clear: both;
+}
 
+.places-item img {
+	width: 460px;
+	display: block;
+	float: left;
+	margin: 10px 10px;
+}
 
+.places-item > div {
+	width: 460px;
+	float: left;
+	margin: 0 10px;
+}
 
+.places-item h2 {
+	font-size: 2.25em;
+	margin-bottom: 20px;
+}
 
+.places-item p {
+	font-size: 1.125em;
+	line-height: 1.4em;
+	max-width: 320px;
+	margin-bottom: 40px;
+}
 
+.places-item a {
+	font-size: 1.125em;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 3px solid;
+	color: #252525;
+	padding: 10px 20px;
+}
 
