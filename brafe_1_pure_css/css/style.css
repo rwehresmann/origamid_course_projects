@@ -51,6 +51,22 @@ a.menu-logo {
 	font-size: 1.125em;
 }
 
+@media (max-width: 739px) {
+	.menu {
+		text-align: center;
+	}
+	
+	a.menu-logo {
+		float: none;
+		margin: 0 auto;
+	}
+	
+	.menu-nav {
+		float: none;
+		clear: both;
+	}
+}
+
 /* Intro */
 
 .intro {
@@ -79,6 +95,13 @@ a.menu-logo {
 	font-style: italic;
 	font-size: 1.125em;
 }
+
+@media (max-width: 739px) {
+	.intro {
+		padding: 60px 0;
+	}
+}
+
 
 /* About */
 
@@ -137,6 +160,17 @@ a.menu-logo {
 	max-width: 460px;
 }
  
+@media (min-width: 740px) and (max-width: 980px) {
+	.about-container {
+		max-width: 720px;
+	}
+	
+	.about-item {
+		width: 340px;
+	}
+}
+
+
 /* Products */
 
 .products {
@@ -211,6 +245,27 @@ h2.products-mineiro::before {
 	text-transform: uppercase;
 	padding: 15px 0;
 }
+
+@media (min-width: 740px) and (max-width: 980px) {
+	.products-container {
+		max-width: 720px;
+	}
+	
+	.products-item {
+		width: 220px;
+	}
+}
+
+@media (max-width: 739px) {
+	.products-container {
+		max-width: 300px;
+	}
+	
+	.products-item {
+		margin: 0 auto 20px auto;
+	}
+}
+
 
 /* Places */
 
@@ -331,6 +386,25 @@ h2.products-mineiro::before {
 	cursor: pointer;
 }
 
+@media (min-width: 740px) and (max-width: 980px) {
+	.newsletter-container {
+		max-width: 720px;
+	}
+	.newsletter-info, .newsletter form, .newsletter input {
+		width: 340px;
+	}
+}
+
+@media (max-width: 739px) {
+	.newsletter-container {
+		max-width: 300px;
+	}
+	.newsletter-info, .newsletter form, .newsletter input {
+		width: 300px;
+		margin: 10px 0 0 0;
+	}
+}
+
 /*Footer*/
 
 .footer {
@@ -360,4 +434,18 @@ h2.products-mineiro::before {
 	float: right;
 	margin: 0 10px;
 	display: block;
+}
+
+@media (max-width: 739px) {
+	.footer-container {
+		max-width: 300px;
+	}
+	.footer p {
+		float: none;
+		margin: 0px;
+	}
+	.footer img {
+		float: none;
+		margin: 20px 0;
+	}
 }
