@@ -1,0 +1,370 @@
+/* Reset */
+
+body, h1, h2, h3, p, ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	font-family: Georgia, serif;
+	color: #252525;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	display: flex;
+	max-width: 960px;
+	margin:  0 auto;
+}
+
+@media (max-width: 739px) {
+	.container {
+		flex-direction: column;
+		max-width: 300px;
+	}
+}
+
+/* Menu */
+
+.menu {
+	background: #252525;
+	padding: 15px 0;
+}
+
+.menu-nav {
+	flex: 1;
+	margin: 0 10px;
+	align-self: center;
+}
+
+.menu-nav a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.125em;
+}
+
+.menu-nav ul {
+	float: right;
+	display: flex;
+	list-style: none;
+}
+
+.menu-nav ul li a {
+	padding: 10px;
+}
+
+.menu-logo {
+	margin: 0 10px;
+}
+
+@media (max-width: 739px) {
+	.menu-nav {
+		margin: 0px;
+	}
+
+	.menu-nav ul li a {
+		padding-left: 0px;
+	}
+	
+	.menu-logo {
+		margin-left: 15px;
+	}
+}
+
+/* Intro */
+
+.intro {
+	background: url('../img/bg-intro.jpg') no-repeat center center;
+	background-size: cover;
+	color: #fff;
+	padding: 150px 0;
+	text-align: center;
+}
+
+.intro h1 {
+	text-transform: uppercase;
+	font-size: 3em;
+}
+
+.intro h1::after {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 4px;
+	background: #fff;
+	margin: 10px auto;
+}
+
+.intro p {
+	font-style: italic;
+	font-size: 1.125em;
+}
+
+@media (max-width: 739px) {
+	.intro {
+		padding: 60px 0;
+	}
+}
+
+/* About */
+
+.about {
+	padding: 60px 0;
+}
+
+.about h2 {
+	font-size: 2.25em;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.about-item {
+	flex: 1;
+	margin: 0 10px;
+}
+
+.about-item img {
+	display: block;
+	max-width: 100%;
+}
+
+.about-item h3 {
+	font-size: 2.25em;
+	line-height: 1em;
+	background: #252525;
+	color: #fff;
+	font-style: italic;
+	font-weight: normal;
+	text-align: center;
+	position: relative;
+	width: 220px;
+	padding: 5px 0 10px 0;
+	top: -25px;
+}
+
+.about > p {
+	font-size: 1.125em;
+	line-height: 1.4em;
+	font-style: italic;
+	margin: 20px auto;
+	max-width: 460px;
+	text-align: center;
+}
+
+@media (max-width: 739px) {
+	.about-item {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+
+/* Products */
+
+.products {
+	background: #e7e4d8;
+	border-top: 3px solid #d6d3c8;
+	border-bottom: 3px solid #d6d3c8;
+	padding: 60px 0;
+}
+
+.products-item {
+	flex: 1;
+	margin: 0 10px 40px 10px;
+}
+
+.products-item h2 {
+	font-size: 2.25em;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.products-item h2::before {
+	content: '';
+	display: block;
+	width: 100px;
+	height: 100px;
+	background: currentColor;
+	border-radius: 50%;
+	border: 5px solid #e7e4d8;
+	box-shadow: 0 0 0 5px currentColor;
+	margin: 20px auto;
+}
+
+h2.products-paulista::before {
+	color: #492901;
+}
+
+h2.products-carioca::before {
+	color: #c17139;
+}
+
+h2.products-mineiro::before {
+	color: #d7a54d;
+}
+
+.products-item p {
+	font-size: 0.875em;
+	line-height: 1.4em;
+}
+
+.products-btn {
+		border: 3px solid #252525;
+	color: #252525;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.125em;
+	font-weight: bold;
+	text-transform: uppercase;
+	display: block;
+	width: 180px;
+	padding: 15px 0;
+	margin: 20px auto 0 auto;
+}
+
+@media (max-width: 739px) {
+	.products-item {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+
+/* Places */
+
+.places {
+	padding: 60px 0;
+}
+
+.places-item {
+	margin-bottom: 40px;
+}
+
+.places-img, .places-info {
+	flex: 1;
+	margin: 0 10px;
+}
+
+.places-img img {
+	display: block;
+	max-width: 100%;
+}
+
+.places-item h2 {
+	font-size: 2.25em;
+	margin-bottom: 20px;
+}
+
+.places-item p {
+	font-size: 1.125em;
+	line-height: 1.4em;
+	max-width: 320px;
+	margin-bottom: 40px;
+}
+
+.places-item a {
+	font-size: 1.125em;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 3px solid;
+	color: #252525;
+	padding: 10px 20px;
+}
+
+@media (max-width: 739px) {
+	.places-img, .places-info {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+
+/* Newsletter */
+
+.newsletter {
+	background: #e7e4d8;
+	padding: 30px 0;
+}
+
+.newsletter-info {
+	flex: 1;
+	margin: 0 10px;
+}
+
+.newsletter-info h2 {
+	font-size: 2.25em;
+}
+
+.newsletter-info p {
+	font-size: 1.5em;
+	font-style: italic;
+}
+
+.newsletter form {
+	flex: 1;
+	margin: 0 10px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+
+.newsletter form label {
+	display: none;
+}
+
+.newsletter input {
+	flex: 1;
+	align-self: flex-start;
+	padding: 10px;
+	border: 3px solid #252525;
+	background: none;
+	font-size: 1.5em;
+	font-style: italic;
+	font-family: Georgia, serif;
+}
+
+.newsletter button {
+	flex: 1;
+	padding: 13px;
+	align-self: flex-start;
+	background: #252525;
+	border: none;
+	font-family: Georgia, serif;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	color: #fff;
+	cursor: pointer;
+}
+
+@media (max-width: 739px) {
+	.newsletter-info {
+		margin: 0 0 20px 0;
+	}
+	.newsletter form {
+		margin: 0px;
+	}
+}
+
+/*Footer*/
+
+.footer {
+	background: #d6d3c8;
+	padding: 40px 0;
+}
+
+.footer p {
+	font-size: 1.125em;
+	line-height: 1.4em;
+	margin: 0 10px;
+	flex: 1;
+}
+
+.footer-img {
+	margin: 0 10px;
+}
+
+@media (max-width: 739px) {
+	.footer-img, .footer p {
+		margin: 10px 0px;
+	}
+}
